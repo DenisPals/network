@@ -1,0 +1,33 @@
+{% extends "network/layout.html" %}
+
+{% block body %}
+    <h1 class="m-3" id="header">All Posts</h1>
+
+    {% if user.is_authenticated %}
+    <div class="container-centered border m-5">
+        <form id="postForm" class="m-5" method="post">
+            <h4 class="mb-3">New Post</h4>
+            <textarea id="postContent" cols="30" rows="5" class="form-control" required></textarea>
+            <input type="submit" class="btn btn-primary" value="Post">
+        </form>
+    </div>
+    {% endif %}
+
+    <div class="container" id="profile">
+        <h4 id="username"></h4>
+        <button class="btn btn-outline-danger" id="follow"></button>
+        <h5 id="amountFollowers"></h5>
+        <h5 id="amountFollowing"></h5>
+    </div>
+
+    <div class="container" id="allPosts">
+    </div>
+
+    <div class="container">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination" id="pagination">
+            </ul>
+        </nav>
+    </div>
+
+{% endblock %}
