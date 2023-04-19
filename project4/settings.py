@@ -49,7 +49,7 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
+    #'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -81,7 +81,7 @@ WSGI_APPLICATION = 'project4.wsgi.application'
 
 DATABASES = {  
     'default': {  
-        'ENGINE': '',  
+        'ENGINE': 'django.db.backends.mysql',  
         'NAME': '',  
         'USER': '',  
         'PASSWORD': '',  
@@ -131,4 +131,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-STATIC_URL = ''
+STATIC_URL = 'https://storage.googleapis.com/REMOVED/static/'
