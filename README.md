@@ -1,6 +1,6 @@
 # Network - A social network where users can follow and like other users posts
 ## Complexity:
- This is a web application is a social network in simplified form. The user can post and like posts. Additionally the user can follow other users. 
+ This web application is a social network in simplified form. The user can post and like posts. Additionally the user can follow other users. 
  This was a course project for Harvards CS50s Web Programming with Python and JavaScript.
 
 Some of the greater challenges were:
